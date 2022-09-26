@@ -27,7 +27,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.MapGet("/", () => " ola" );
 app.MapControllers();
 
 app.Run();
